@@ -1,25 +1,40 @@
     /*GENERALES*/
     body {
-        background-color: #c7c0c0;
+        background-color: #171c36;
         font-family: Georgia, 'Times New Roman', Times, serif
     }
 
+    .info p {
+        color: black;
+        border: 1px solid #333;
+        background-color: white;
+        text-align: center;
+        width: 250px;
+        border-radius: 15px;
+    }
 
     /*CABECERA*/
-    #menu{
-        display: inline-block;
+    #menu {
+        display: flex;
         list-style: none;
         margin: 0px;
         padding: 0px;
         border: #747272;
+        justify-content: center;
+        margin-bottom: 80px;
+        margin-top: 20px;
     }
 
-    #menu li{
+    #section .product p {
+        color: white;
+    }
+
+    #menu li {
         display: inline-block;
         margin-right: 0px;
     }
 
-    #menu li:last-child{
+    #menu li:last-child {
         margin-right: 0px;
     }
 
@@ -27,12 +42,322 @@
         display: block;
         padding: 10px;
         text-decoration: none;
-        color: black;
+        color: white;
     }
 
-    #menu a:hover{
-        background-color: #333;
-        color: white;
+    #menu a:hover {
+        background-color: #ffffff;
+        color: black;
         transition: all 300ms;
         border-radius: 13px;
+    }
+
+    /*CONTENIDO*/
+
+    #section {
+        display: flex;
+        flex-direction: row;
+        margin-left: 50px;
+    }
+
+    #section .blazer {
+        margin-left: 100px;
+    }
+
+    .blazer img {
+        width: 800px;
+        border-radius: 20px;
+        display: flex;
+    }
+
+    #section p:nth-last-of-type(2) {
+        font-size: 20px;
+    }
+
+    #section h4 a {
+        text-decoration: none;
+        color: white;
+    }
+
+    #section h4 a:hover {
+        color: #a39e9e;
+    }
+
+    #section .product>h2 {
+        font-size: 40px;
+        color: white;
+        text-decoration: underline;
+    }
+
+    #section .product>h2:hover {
+        cursor: pointer;
+    }
+
+    #section .colors {
+        width: 120px;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #section .colors .color-1 {
+        border: 1px solid #333;
+        width: 20px;
+        height: 20px;
+        background-color: #532a03;
+        cursor: pointer;
+    }
+
+    #section .colors .color-2 {
+        border: 1px solid #333;
+        width: 20px;
+        height: 20px;
+        background-color: #022647;
+
+        cursor: pointer;
+    }
+
+    .color-3 {
+        border: 1px solid #333;
+        width: 20px;
+        height: 20px;
+        background-color: #700303;
+        cursor: pointer;
+    }
+
+    #section .colors .color-4 {
+        border: 1px solid #333;
+        width: 20px;
+        height: 20px;
+        background-color: #053809;
+        cursor: pointer;
+    }
+
+    #quantity .numbers {
+        text-align: center;
+        width: 120px;
+        display: flex;
+        justify-content: space-between;
+        cursor: pointer;
+    }
+
+
+    #quantity .number-1 {
+        border: 1px solid #333;
+        width: 20px;
+        height: 20px;
+        color: white;
+    }
+
+    #quantity .number-1:hover {
+        background-color: white;
+        color: black;
+        transition: all 300ms;
+    }
+
+    #quantity .number-2 {
+        border: 1px solid #333;
+        width: 20px;
+        height: 20px;
+        color: white;
+    }
+
+    #quantity .number-2:hover {
+        background-color: white;
+        color: black;
+        transition: all 300ms;
+    }
+
+    #quantity .number-3 {
+        border: 1px solid #333;
+        width: 20px;
+        height: 20px;
+        color: white;
+    }
+
+    #quantity .number-3:hover {
+        background-color: white;
+        color: black;
+        transition: all 300ms;
+    }
+
+    #quantity .number-4 {
+        border: 1px solid #333;
+        width: 20px;
+        height: 20px;
+        color: white;
+    }
+
+    #quantity .number-4:hover {
+        background-color: white;
+        color: black;
+        transition: all 300ms;
+    }
+
+    #quantity .number-5 {
+        border: 1px solid #333;
+        width: 20px;
+        height: 20px;
+        color: white;
+    }
+
+    #quantity .number-5:hover {
+        background-color: white;
+        color: black;
+        transition: all 300ms;
+    }
+
+    #color-picker h3 {
+        color: white;
+    }
+
+    #quantity h3 {
+        color: white;
+    }
+
+    #section-2>p {
+        text-align: center;
+        font-size: 40px;
+        margin-top: 80px;
+        color: white;
+    }
+
+    .details {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
+    }
+
+    .details p {
+        width: 400px;
+        color: white;
+    }
+
+    .details img {
+        width: 400px;
+        margin-top: 10px;
+        border-radius: 15px;
+    }
+
+    .info {
+        display: flex;
+        justify-content: space-evenly;
+        width: 100%;
+    }
+
+    .info img {
+        width: 75px;
+        margin-top: 100px;
+        margin-left: 80px;
+    }
+
+    #coments .reviews h3 {
+        color: white;
+    }
+
+
+    #coments .reviews .stars {
+        width: 6%;
+        color: gold;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #coments .reviews .stars .star:last-child {
+        color: grey;
+    }
+
+    #coments .reviews {
+        margin: 50px;
+    }
+
+    .stats {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    #coments .reviews .user {
+        color: white;
+    }
+
+    .stats .star-5 a,
+    .star-4 a,
+    .star-3 a,
+    .star-2 a,
+    .star-1 a {
+        color: gold;
+        text-decoration: none;
+
+    }
+
+
+    .stats .star-5,
+    .star-4,
+    .star-3,
+    .star-2,
+    .star-1 {
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .share p {
+        width: 20%;
+        color: white;
+    }
+
+    .share h4 a {
+        text-decoration: none;
+        margin-left: 40px;
+        color: white;
+    }
+
+    .stats .star-1,
+    .star-2,
+    .star-3,
+    .star-4,
+    .star-5 {
+        width: 250px;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .stats .barra-5{
+        width: 150px;
+        height: 10px;
+        border: 1px solid gold;
+        background-color: gold;
+        border-radius: 20px;
+    }
+
+    .stats .barra-4{
+        width: 150px;
+        height: 10px;
+        border: 1px solid gold;
+        background-color: gold;
+        border-radius: 20px;
+    }
+
+    .stats .barra-3{
+        width: 150px;
+        height: 10px;
+        border: 1px solid gold;
+        background-color: gold;
+        border-radius: 20px;
+    }
+
+    .stats .barra-2{
+        width: 150px;
+        height: 10px;
+        border: 1px solid gold;
+        background-color: gold;
+        border-radius: 20px;
+    }
+
+    .stats .barra-1{
+        width: 150px;
+        height: 10px;
+        border: 1px solid gold;
+        background-color: gold;
+        border-radius: 20px;
     }
