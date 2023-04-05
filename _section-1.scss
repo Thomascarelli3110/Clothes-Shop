@@ -1,0 +1,114 @@
+@mixin flexible ($dis, $direction, $corte, $just, $align) {
+    display: $dis;
+    flex-flow: $direction $corte;
+    justify-content: $just;
+    align-items: $align;
+}
+
+.container {
+    width: 90%;
+    @include flexible(flex, row, nowrap, space-around, normal);
+    margin-left: 1%;
+    padding: 2%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+    .foto{
+        img{
+            border-radius: 50px;
+        }
+    }
+    .necesidad {
+        width: 75%;
+        margin-right: 3%;
+        padding: 3%;
+
+        h2 {
+            font-size: 30px
+        }
+
+        .botom a{
+            text-decoration: none;
+            font-size: 20px;
+            color: black;
+            border: 1px solid black;
+           padding: 100px
+        }
+
+    }
+
+    .pickers {
+        @include flexible(flex, row, nowrap, space-between, flex-star);
+        width: 100%;
+
+        .cantidad a {
+            text-decoration: none;
+            font-size: 30px;
+            font-weight: bold;
+            color: black;
+            font-family: 'Courier New', Courier, monospace
+        }
+
+
+        .pick-color {
+            .colores-box {
+                display: flex;
+                justify-content: space-around;
+                cursor: pointer;
+
+                .color-box-1 {
+                    border: 2px solid #333;
+                    background-color: rgb(87, 27, 9);
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    border-radius: 20px;
+                }
+
+                .color-box-2 {
+                    border: 2px solid #333;
+                    background-color: rgb(40, 83, 40);
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    border-radius: 20px;
+                }
+
+                .color-box-3 {
+                    border: 2px solid #333;
+                    background-color: rgb(46, 30, 107);
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    border-radius: 20px;
+                }
+
+                .color-box-4 {
+                    border: 2px solid #333;
+                    background-color: rgb(139, 139, 46);
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    border-radius: 20px;
+                }
+
+                .color-box-5 {
+                    border: 2px solid #333;
+                    background-color: rgb(59, 16, 63);
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    border-radius: 20px;
+                }
+
+                .color-box-6 {
+                    border: 2px solid #333;
+                    background-color: rgb(148, 75, 8);
+                    width: 30px;
+                    height: 30px;
+                    margin-right: 10px;
+                    border-radius: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,36 @@
+@mixin flexible($dis, $direction, $corte, $just, $align) {
+    display: $dis;
+    flex-flow: $direction $corte;
+    justify-content: $just;
+    align-items: $align;
+}
+
+.lista {
+    ul {
+        @include flexible (flex, row, nowrap, center, center);
+        
+        li {
+            list-style: none;
+
+            a {
+                text-decoration: none;
+                padding: 10px;
+                font-weight: bold;
+                font-size: 18px;
+                color: white;
+
+            }
+
+            a:hover {
+                border: 1px solid transparent;
+                padding: 10px;
+                background-color: rgb(69, 90, 119);
+                border-radius: 10px;
+                transition: all 250ms;
+                transform: scale(2);
+            }
+        }
+    }
+
+}
+

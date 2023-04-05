@@ -1,0 +1,139 @@
+@mixin flexible ($dis, $direction, $corte, $just, $align) {
+    display: $dis;
+    flex-flow: $direction $corte;
+    justify-content: $just;
+    align-items: $align;
+}
+
+#section-2 {
+    padding: 0px;
+    margin: 0px;
+
+    .fine-details {
+        width: 100%;
+
+        h2 {
+            width: 100%;
+            margin-top: 5%;
+            text-align: center;
+            font-size: 35px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #2b2a2a;
+        }
+
+        p {
+            @include flexible(flex, row, wrap, center, center);
+            width: 60%;
+            margin-left: 450px;
+            margin-bottom: 90px;
+            font-size: 18px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        }
+    }
+
+    .clothes {
+        @include flexible(flex, row, nowrap, space-around, normal);
+
+        .sudadera {
+            img {
+                width: 450px;
+                border-radius: 25px;
+                box-shadow: 0px 0px 4px rgb(90, 123, 170);
+            }
+        }
+
+        .sobrecamisa {
+            img {
+                width: 450px;
+                border-radius: 25px;
+                box-shadow: 0px 0px 4px rgb(90, 123, 170);
+            }
+        }
+
+        .polo {
+            img {
+                width: 450px;
+                border-radius: 25px;
+                box-shadow: 0px 0px 4px rgb(90, 123, 170);
+            }
+        }
+    }
+
+    .info {
+        @include flexible(flex, row, nowrap, space-around, noraml);
+        margin: 6%;
+        margin-top: 7%;
+
+        .envio {
+            img {
+                width: 50px;
+                border: 1px solid white;
+                border-radius: 150px;
+                padding: 30px;
+                background-color: #1fabab;
+                margin-left: 25%;
+                cursor: pointer;
+            }
+
+            p {
+                width: 350px;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 18px;
+            }
+        }
+
+        .support {
+            img {
+                width: 50px;
+                border: 1px solid white;
+                border-radius: 150px;
+                padding: 30px;
+                background-color: #1fabab;
+                margin-left: 25%;
+                cursor: pointer;
+            }
+
+            p {
+                width: 350px;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 18px;
+            }
+        }
+
+        .buys {
+            img {
+                width: 50px;
+                border: 1px solid white;
+                border-radius: 150px;
+                padding: 30px;
+                background-color: #1fabab;
+                margin-left: 25%;
+                cursor: pointer;
+            }
+
+            p {
+                width: 350px;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 18px;
+            }
+        }
+
+        .gift {
+            img {
+                width: 50px;
+                border: 1px solid white;
+                border-radius: 150px;
+                padding: 30px;
+                background-color: #1fabab;
+                margin-left: 25%;
+                cursor: pointer;
+            }
+
+            p {
+                width: 350px;
+                font-family: 'Times New Roman', Times, serif;
+                font-size: 18px;
+            }
+        }
+    }
+}

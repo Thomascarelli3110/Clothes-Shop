@@ -1,0 +1,586 @@
+body {
+  background-color: rgb(148, 163, 184);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.lista ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.lista ul li {
+  list-style: none;
+}
+.lista ul li a {
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  color: white;
+}
+.lista ul li a:hover {
+  border: 1px solid transparent;
+  padding: 10px;
+  background-color: rgb(69, 90, 119);
+  border-radius: 10px;
+  transition: all 250ms;
+  transform: scale(2);
+}
+
+.container {
+  width: 90%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: normal;
+  margin-left: 1%;
+  padding: 2%;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+.container .foto img {
+  border-radius: 50px;
+}
+.container .necesidad {
+  width: 75%;
+  margin-right: 3%;
+  padding: 3%;
+}
+.container .necesidad h2 {
+  font-size: 30px;
+}
+.container .necesidad .botom a {
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  border: 1px solid black;
+  padding: 100px;
+}
+.container .pickers {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: flex-star;
+  width: 100%;
+}
+.container .pickers .cantidad a {
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  color: black;
+  font-family: "Courier New", Courier, monospace;
+}
+.container .pickers .pick-color .colores-box {
+  display: flex;
+  justify-content: space-around;
+  cursor: pointer;
+}
+.container .pickers .pick-color .colores-box .color-box-1 {
+  border: 2px solid #333;
+  background-color: rgb(87, 27, 9);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+.container .pickers .pick-color .colores-box .color-box-2 {
+  border: 2px solid #333;
+  background-color: rgb(40, 83, 40);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+.container .pickers .pick-color .colores-box .color-box-3 {
+  border: 2px solid #333;
+  background-color: rgb(46, 30, 107);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+.container .pickers .pick-color .colores-box .color-box-4 {
+  border: 2px solid #333;
+  background-color: rgb(139, 139, 46);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+.container .pickers .pick-color .colores-box .color-box-5 {
+  border: 2px solid #333;
+  background-color: rgb(59, 16, 63);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+.container .pickers .pick-color .colores-box .color-box-6 {
+  border: 2px solid #333;
+  background-color: rgb(148, 75, 8);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+#section-2 {
+  padding: 0px;
+  margin: 0px;
+}
+#section-2 .fine-details {
+  width: 100%;
+}
+#section-2 .fine-details h2 {
+  width: 100%;
+  margin-top: 5%;
+  text-align: center;
+  font-size: 35px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #2b2a2a;
+}
+#section-2 .fine-details p {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  margin-left: 450px;
+  margin-bottom: 90px;
+  font-size: 18px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+}
+#section-2 .clothes {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: normal;
+}
+#section-2 .clothes .sudadera img {
+  width: 450px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 4px rgb(90, 123, 170);
+}
+#section-2 .clothes .sobrecamisa img {
+  width: 450px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 4px rgb(90, 123, 170);
+}
+#section-2 .clothes .polo img {
+  width: 450px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 4px rgb(90, 123, 170);
+}
+#section-2 .info {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: noraml;
+  margin: 6%;
+  margin-top: 7%;
+}
+#section-2 .info .envio img {
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 150px;
+  padding: 30px;
+  background-color: #1fabab;
+  margin-left: 25%;
+  cursor: pointer;
+}
+#section-2 .info .envio p {
+  width: 350px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+#section-2 .info .support img {
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 150px;
+  padding: 30px;
+  background-color: #1fabab;
+  margin-left: 25%;
+  cursor: pointer;
+}
+#section-2 .info .support p {
+  width: 350px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+#section-2 .info .buys img {
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 150px;
+  padding: 30px;
+  background-color: #1fabab;
+  margin-left: 25%;
+  cursor: pointer;
+}
+#section-2 .info .buys p {
+  width: 350px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+#section-2 .info .gift img {
+  width: 50px;
+  border: 1px solid white;
+  border-radius: 150px;
+  padding: 30px;
+  background-color: #1fabab;
+  margin-left: 25%;
+  cursor: pointer;
+}
+#section-2 .info .gift p {
+  width: 350px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+}
+
+#comentarios {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: normal;
+  margin-left: 50px;
+}
+#comentarios .reviews h3 {
+  margin-bottom: 0;
+  font-size: 22px;
+}
+#comentarios .reviews .stars {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: fle-star;
+  align-items: normal;
+  color: gold;
+}
+#comentarios .reviews .stars .star {
+  font-size: 25px;
+  letter-spacing: 3px;
+}
+#comentarios .reviews .stars .star:nth-child(5) {
+  color: #333;
+}
+#comentarios .reviews .stars p {
+  color: black;
+  margin-left: 20px;
+  font-size: 20px;
+  margin-bottom: -2%;
+  margin-top: 2%;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+#comentarios .reviews .user {
+  font-weight: bold;
+}
+#comentarios .reviews .stats .star-5 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-star;
+  align-items: center;
+}
+#comentarios .reviews .stats .star-5 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#comentarios .reviews .stats .star-5 a {
+  text-decoration: none;
+  color: gold;
+  font-size: 17px;
+  margin-bottom: 1%;
+}
+#comentarios .reviews .stats .star-5 .barra-5 {
+  width: 180px;
+  height: 13px;
+  margin-left: 10px;
+  background-color: gold;
+  border-radius: 20px;
+  box-shadow: 0px 0px 7px #ef9d09 inset;
+  margin-top: -2px;
+}
+#comentarios .reviews .stats .star-4 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-star;
+  align-items: center;
+}
+#comentarios .reviews .stats .star-4 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#comentarios .reviews .stats .star-4 a {
+  text-decoration: none;
+  color: gold;
+  font-size: 17px;
+  margin-bottom: 1%;
+}
+#comentarios .reviews .stats .star-4 .barra-4 {
+  width: 140px;
+  height: 13px;
+  margin-left: 10px;
+  background-color: gold;
+  border-radius: 20px;
+  box-shadow: 0px 0px 7px #ef9d09 inset;
+  margin-top: -2px;
+}
+#comentarios .reviews .stats .star-3 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-star;
+  align-items: center;
+}
+#comentarios .reviews .stats .star-3 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#comentarios .reviews .stats .star-3 a {
+  text-decoration: none;
+  color: gold;
+  font-size: 17px;
+  margin-bottom: 1%;
+}
+#comentarios .reviews .stats .star-3 .barra-3 {
+  width: 105px;
+  height: 13px;
+  margin-left: 10px;
+  background-color: gold;
+  border-radius: 20px;
+  box-shadow: 0px 0px 7px #ef9d09 inset;
+  margin-top: -2px;
+}
+#comentarios .reviews .stats .star-2 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-star;
+  align-items: center;
+}
+#comentarios .reviews .stats .star-2 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#comentarios .reviews .stats .star-2 a {
+  text-decoration: none;
+  color: gold;
+  font-size: 17px;
+  margin-bottom: 1%;
+}
+#comentarios .reviews .stats .star-2 .barra-2 {
+  width: 70px;
+  height: 13px;
+  margin-left: 10px;
+  background-color: gold;
+  border-radius: 20px;
+  box-shadow: 0px 0px 7px #ef9d09 inset;
+  margin-top: -2px;
+}
+#comentarios .reviews .stats .star-1 {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-star;
+  align-items: center;
+}
+#comentarios .reviews .stats .star-1 p {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+#comentarios .reviews .stats .star-1 a {
+  text-decoration: none;
+  color: gold;
+  font-size: 17px;
+  margin-bottom: 1%;
+}
+#comentarios .reviews .stats .star-1 .barra-1 {
+  width: 30px;
+  height: 13px;
+  margin-left: 10px;
+  background-color: gold;
+  border-radius: 20px;
+  box-shadow: 0px 0px 7px #ef9d09 inset;
+  margin-top: -2px;
+}
+
+.share {
+  width: 70%;
+}
+.share h3 {
+  color: black;
+  width: 80%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.share h4 a {
+  text-decoration: none;
+  border: 1px solid #505050;
+  background-color: rgb(23, 175, 137);
+  color: white;
+  box-shadow: 0px 0px 2px black inset;
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 17px;
+  margin-left: 250px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.coment {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: normal;
+  margin-left: 20px;
+}
+.coment .person-1 p {
+  width: 70%;
+  margin-top: 0;
+}
+.coment .person-2 p {
+  width: 70%;
+  margin-top: 0;
+}
+.coment .person-3 p {
+  width: 70%;
+  margin-top: 0;
+}
+.coment .kyle {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-star;
+  align-items: normal;
+}
+.coment .kyle img {
+  width: 4%;
+  height: 4%;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 40px;
+  background-color: white;
+  margin-right: 15px;
+}
+.coment .kyle .star h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+.coment .kyle .star p {
+  color: gold;
+  font-size: 18px;
+  margin-top: -13%;
+}
+.coment .naruto {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-star;
+  align-items: normal;
+}
+.coment .naruto img {
+  width: 4%;
+  height: 4%;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 40px;
+  background-color: white;
+  margin-right: 15px;
+}
+.coment .naruto .star h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+.coment .naruto .star p {
+  color: gold;
+  font-size: 18px;
+  margin-top: -13%;
+}
+.coment .meme {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-star;
+  align-items: normal;
+}
+.coment .meme img {
+  width: 4%;
+  height: 4%;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 40px;
+  background-color: white;
+  margin-right: 15px;
+}
+.coment .meme .star h4 {
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: underline;
+}
+.coment .meme .star p {
+  color: gold;
+  font-size: 18px;
+  margin-top: -15%;
+}
+
+#footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: normal;
+  margin-top: 100px;
+}
+#footer .products h4 {
+  color: #333;
+  font-size: 20px;
+  margin: 30px;
+  cursor: pointer;
+}
+#footer .company h4 {
+  color: #3f3e3e;
+  font-size: 20px;
+  margin: 30px;
+  cursor: pointer;
+}
+#footer .service h4 {
+  color: #333;
+  font-size: 20px;
+  margin: 30px;
+  cursor: pointer;
+}
+#footer .products h4:nth-child(1) {
+  color: black;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+}
+#footer .company h4:nth-child(1) {
+  color: black;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+}
+#footer .service h4:nth-child(1) {
+  color: black;
+  font-size: 30px;
+  font-family: "Times New Roman", Times, serif;
+  text-decoration: underline;
+}
+#footer .sign-up h4 {
+  font-size: 27px;
+  text-decoration: underline;
+}
+#footer .sign-up h5 {
+  color: #333;
+  font-size: 15px;
+  margin-top: -15px;
+}
+#footer .sign-up a {
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+  border: 1px solid #505050;
+  box-shadow: 0px 0px 2px black inset;
+  border-radius: 30px;
+  background-color: rgb(23, 175, 137);
+  padding: 10px;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.copy {
+  width: 100%;
+  padding: 0px;
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+}
+
+/*# sourceMappingURL=style.css.map */
