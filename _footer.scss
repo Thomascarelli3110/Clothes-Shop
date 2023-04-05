@@ -7,65 +7,54 @@
 
 #footer {
     @include flexible(flex, row, nowrap, space-around, normal);
-    margin-top: 100px;
+    margin-top: 150px;
 
     .products h4 {
         color: #333;
-        font-size: 20px;
+        font-size: 17px;
         margin: 30px;
         cursor: pointer;
     }
 
     .company h4 {
-        color: #3f3e3e;
-        font-size: 20px;
+        color: #333;
+        font-size: 17px;
         margin: 30px;
         cursor: pointer;
     }
 
     .service h4 {
         color: #333;
-        font-size: 20px;
+        font-size: 17px;
         margin: 30px;
         cursor: pointer;
     }
 
-    .products h4:nth-child(1) {
-        color: black;
-        font-size: 30px;
-        font-family: 'Times New Roman', Times, serif;
-        text-decoration: underline;
-    }
-
-
-
-    .company h4:nth-child(1) {
-        color: black;
-        font-size: 30px;
-        font-family: 'Times New Roman', Times, serif;
-        text-decoration: underline;
-    }
-
-
-
+    .products h4:nth-child(1),
+    .company h4:nth-child(1),
     .service h4:nth-child(1) {
         color: black;
-        font-size: 30px;
+        font-size: 20px;
         font-family: 'Times New Roman', Times, serif;
-        text-decoration: underline;
+        text-decoration: underline #333;
+        text-transform: uppercase;
     }
 
-    .sign-up{
-        h4{
-            font-size: 27px;
-            text-decoration: underline;
+    .sign-up {
+        h4 {
+            font-size: 20px;
+            text-decoration: underline #333;
+            font-family: 'Times New Roman', Times, serif;
+            text-transform: uppercase;
         }
-        h5{
+
+        h5 {
             color: #333;
-            font-size: 15px;
+            font-size: 17px;
             margin-top: -15px;
         }
-        a{
+
+        a {
             font-size: 20px;
             text-decoration: none;
             color: white;
@@ -76,10 +65,10 @@
             padding: 10px;
             font-family: 'Times New Roman', Times, serif;
         }
-    }    
+    }
 }
 
-.copy{
+.copy {
     width: 100%;
     padding: 0px;
     display: flex;
