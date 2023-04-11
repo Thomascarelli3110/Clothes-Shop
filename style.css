@@ -1,63 +1,80 @@
 body {
-  background-color: rgb(148, 163, 184);
+  background-color: rgb(240, 232, 217);
   font-family: Arial, Helvetica, sans-serif;
+  margin: 0px;
+  padding: 0px;
 }
 
-.lista ul {
+#menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: normal;
+}
+#menu .icono img {
+  width: 50px;
+  margin-top: 8px;
+}
+#menu .login {
+  display: flex;
+  flex-direction: row-reverse;
+  cursor: pointer;
+}
+#menu .login a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: black;
+  font-weight: bolder;
+  margin-top: 15px;
+  font-family: none;
+}
+#menu .login img {
+  width: 30px;
+  height: 30px;
+  margin-top: 10px;
+}
+#menu .lista ul {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
-.lista ul li {
+#menu .lista ul li {
   list-style: none;
 }
-.lista ul li a {
+#menu .lista ul li a {
   text-decoration: none;
   padding: 10px;
   font-weight: bold;
   font-size: 18px;
-  color: white;
+  color: black;
 }
-.lista ul li a:hover {
-  border: 1px solid transparent;
+#menu .lista ul li a:hover {
+  border: 1px solid white;
   padding: 10px;
   background-color: rgb(69, 90, 119);
-  border-radius: 10px;
-  transition: all 250ms;
+  border-radius: 17px;
+  transition: all 50ms;
   transform: scale(2);
+  color: white;
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: normal;
-  margin-left: 1%;
-  padding: 2%;
   font-family: Georgia, "Times New Roman", Times, serif;
-}
-.container .carrito {
-  width: 100%;
-  text-align: center;
-  margin-top: 55px;
-  border: 1px solid black;
-  background-color: rgb(23, 175, 137);
-  box-shadow: 0px 0px 2px black inset;
-  border-radius: 30px;
-}
-.container .carrito p {
-  font-size: 17px;
-  font-family: "Times New Roman", Times, serif;
-  text-transform: uppercase;
 }
 .container .foto img {
   border-radius: 50px;
+  width: 97%;
+  margin-bottom: 100px;
+  margin-top: 50px;
 }
 .container .necesidad {
   width: 75%;
-  margin-right: 3%;
   padding: 3%;
 }
 .container .necesidad h2 {
@@ -70,6 +87,37 @@ body {
   border: 1px solid black;
   padding: 100px;
 }
+.container .necesidad .caract-product h4 {
+  font-weight: bolder;
+  font-size: 18px;
+  font-family: none;
+  color: #294852;
+  cursor: pointer;
+}
+.container .necesidad .caract-product h2 {
+  font-size: 37px;
+  text-transform: uppercase;
+}
+.container .necesidad .caract-product p {
+  color: #333;
+  margin-top: -10px;
+}
+.container .carrito {
+  width: 100%;
+  text-align: center;
+  margin-top: 55px;
+  border: 1px solid black;
+  background-color: rgb(23, 175, 137);
+  box-shadow: 0px 0px 2px black inset;
+  border-radius: 30px;
+  color: white;
+  cursor: pointer;
+}
+.container .carrito p {
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: uppercase;
+}
 .container .pickers {
   display: flex;
   flex-flow: row nowrap;
@@ -77,12 +125,19 @@ body {
   align-items: flex-star;
   width: 100%;
 }
+.container .pickers .cantidad {
+  font-family: Arial, Helvetica, sans-serif;
+}
 .container .pickers .cantidad a {
   text-decoration: none;
   font-size: 30px;
   font-weight: bold;
   color: black;
   font-family: "Courier New", Courier, monospace;
+}
+.container .pickers .pick-color h3 {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 .container .pickers .pick-color .colores-box {
   display: flex;
@@ -144,25 +199,25 @@ body {
 }
 #section-2 .fine-details {
   width: 100%;
+  margin-bottom: 100px;
+  margin-top: 100px;
 }
 #section-2 .fine-details h2 {
   width: 100%;
-  margin-top: 5%;
   text-align: center;
-  font-size: 35px;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #2b2a2a;
+  font-size: 40px;
+  font-family: didot;
+  color: black;
+  font-weight: bolder;
+  text-transform: uppercase;
 }
-#section-2 .fine-details p {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: center;
-  width: 60%;
-  margin-left: 450px;
-  margin-bottom: 90px;
-  font-size: 18px;
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+#section-2 .fine-details .parrafo-1,
+#section-2 .fine-details .parrafo-2,
+#section-2 .fine-details .parrafo-3 {
+  width: 100%;
+  text-align: center;
+  margin-top: -10px;
+  color: #333;
 }
 #section-2 .clothes {
   display: flex;
@@ -172,29 +227,30 @@ body {
 }
 #section-2 .clothes .sudadera img {
   width: 450px;
-  border-radius: 25px;
-  box-shadow: 0px 0px 4px rgb(90, 123, 170);
+  padding: 2%;
+  border-radius: 30px;
 }
 #section-2 .clothes .sobrecamisa img {
   width: 450px;
-  border-radius: 25px;
-  box-shadow: 0px 0px 4px rgb(90, 123, 170);
+  padding: 2%;
+  border-radius: 30px;
 }
 #section-2 .clothes .polo img {
   width: 450px;
-  border-radius: 25px;
-  box-shadow: 0px 0px 4px rgb(90, 123, 170);
+  padding: 2%;
+  border-radius: 30px;
 }
 #section-2 .info {
+  width: 90%;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
-  align-items: noraml;
+  justify-content: space-between;
+  align-items: normal;
   margin: 6%;
   margin-top: 7%;
 }
 #section-2 .info .envio img {
-  width: 50px;
+  width: 15%;
   border: 1px solid white;
   border-radius: 150px;
   padding: 30px;
@@ -203,12 +259,15 @@ body {
   cursor: pointer;
 }
 #section-2 .info .envio p {
-  width: 350px;
+  width: 90%;
   font-family: "Times New Roman", Times, serif;
   font-size: 18px;
+  margin: 0px;
+  margin-top: 8px;
+  color: #333;
 }
 #section-2 .info .support img {
-  width: 50px;
+  width: 15%;
   border: 1px solid white;
   border-radius: 150px;
   padding: 30px;
@@ -217,12 +276,15 @@ body {
   cursor: pointer;
 }
 #section-2 .info .support p {
-  width: 350px;
+  width: 90%;
   font-family: "Times New Roman", Times, serif;
   font-size: 18px;
+  margin: 0px;
+  margin-top: 8px;
+  color: #333;
 }
 #section-2 .info .buys img {
-  width: 50px;
+  width: 15%;
   border: 1px solid white;
   border-radius: 150px;
   padding: 30px;
@@ -231,12 +293,15 @@ body {
   cursor: pointer;
 }
 #section-2 .info .buys p {
-  width: 350px;
+  width: 90%;
   font-family: "Times New Roman", Times, serif;
   font-size: 18px;
+  margin: 0px;
+  margin-top: 8px;
+  color: #333;
 }
 #section-2 .info .gift img {
-  width: 50px;
+  width: 15%;
   border: 1px solid white;
   border-radius: 150px;
   padding: 30px;
@@ -245,9 +310,12 @@ body {
   cursor: pointer;
 }
 #section-2 .info .gift p {
-  width: 350px;
+  width: 90%;
   font-family: "Times New Roman", Times, serif;
   font-size: 18px;
+  margin: 0px;
+  margin-top: 8px;
+  color: #333;
 }
 
 #comentarios {
@@ -255,11 +323,19 @@ body {
   flex-flow: row nowrap;
   justify-content: space-around;
   align-items: normal;
-  margin-left: 50px;
+  margin-left: 120px;
+}
+#comentarios .reviews {
+  width: 60%;
+  margin-right: 12%;
 }
 #comentarios .reviews h3 {
-  margin-bottom: 0;
-  font-size: 22px;
+  margin-bottom: 25px;
+  margin-top: 25px;
+  font-size: 18px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  text-transform: uppercase;
+  text-decoration: underline;
 }
 #comentarios .reviews .stars {
   display: flex;
@@ -267,6 +343,8 @@ body {
   justify-content: fle-star;
   align-items: normal;
   color: gold;
+  margin-bottom: 40px;
+  margin-top: -20px;
 }
 #comentarios .reviews .stars .star {
   font-size: 25px;
@@ -276,15 +354,20 @@ body {
   color: #333;
 }
 #comentarios .reviews .stars p {
-  color: black;
+  color: #333;
   margin-left: 20px;
-  font-size: 20px;
-  margin-bottom: -2%;
-  margin-top: 2%;
-  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-size: 16px;
+  margin-bottom: -1%;
+  margin-top: 10px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
-#comentarios .reviews .user {
+#comentarios .reviews .user p {
+  font-size: 16px;
   font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: underline;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  margin-bottom: 25px;
 }
 #comentarios .reviews .stats .star-5 {
   display: flex;
@@ -299,11 +382,11 @@ body {
 #comentarios .reviews .stats .star-5 a {
   text-decoration: none;
   color: gold;
-  font-size: 17px;
+  font-size: 14px;
   margin-bottom: 1%;
 }
 #comentarios .reviews .stats .star-5 .barra-5 {
-  width: 180px;
+  width: 90px;
   height: 13px;
   margin-left: 10px;
   background-color: gold;
@@ -324,11 +407,11 @@ body {
 #comentarios .reviews .stats .star-4 a {
   text-decoration: none;
   color: gold;
-  font-size: 17px;
+  font-size: 14px;
   margin-bottom: 1%;
 }
 #comentarios .reviews .stats .star-4 .barra-4 {
-  width: 140px;
+  width: 75px;
   height: 13px;
   margin-left: 10px;
   background-color: gold;
@@ -349,11 +432,11 @@ body {
 #comentarios .reviews .stats .star-3 a {
   text-decoration: none;
   color: gold;
-  font-size: 17px;
+  font-size: 14px;
   margin-bottom: 1%;
 }
 #comentarios .reviews .stats .star-3 .barra-3 {
-  width: 105px;
+  width: 55px;
   height: 13px;
   margin-left: 10px;
   background-color: gold;
@@ -374,11 +457,11 @@ body {
 #comentarios .reviews .stats .star-2 a {
   text-decoration: none;
   color: gold;
-  font-size: 17px;
+  font-size: 14px;
   margin-bottom: 1%;
 }
 #comentarios .reviews .stats .star-2 .barra-2 {
-  width: 70px;
+  width: 40px;
   height: 13px;
   margin-left: 10px;
   background-color: gold;
@@ -399,7 +482,7 @@ body {
 #comentarios .reviews .stats .star-1 a {
   text-decoration: none;
   color: gold;
-  font-size: 17px;
+  font-size: 14px;
   margin-bottom: 1%;
 }
 #comentarios .reviews .stats .star-1 .barra-1 {
@@ -413,12 +496,17 @@ body {
 }
 
 .share {
-  width: 70%;
+  width: 100%;
 }
 .share h3 {
   color: black;
-  width: 80%;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+}
+.share p {
+  color: #333;
+  margin-bottom: 40px;
 }
 .share h4 a {
   text-decoration: none;
@@ -428,8 +516,8 @@ body {
   box-shadow: 0px 0px 2px black inset;
   padding: 10px;
   border-radius: 20px;
-  font-size: 17px;
-  font-family: "Times New Roman", Times, serif;
+  font-size: 18px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 .coment {
@@ -437,25 +525,40 @@ body {
   flex-flow: column nowrap;
   justify-content: space-between;
   align-items: normal;
-  margin-left: 20px;
+  margin-left: 70px;
+}
+.coment .person-1 h4 {
+  font-size: 20px;
+  margin-top: 10px;
 }
 .coment .person-1 p {
-  width: 70%;
+  width: 85%;
   margin-top: 0;
-  font-size: 15px;
+  font-size: 17px;
   font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333;
+}
+.coment .person-2 h4 {
+  font-size: 20px;
+  margin-top: 10px;
 }
 .coment .person-2 p {
-  width: 70%;
+  width: 85%;
   margin-top: 0;
-  font-size: 15px;
+  font-size: 17px;
   font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333;
+}
+.coment .person-3 h4 {
+  font-size: 20px;
+  margin-top: 10px;
 }
 .coment .person-3 p {
-  width: 70%;
+  width: 85%;
   margin-top: 0;
-  font-size: 15px;
+  font-size: 17px;
   font-family: Georgia, "Times New Roman", Times, serif;
+  color: #333;
 }
 .coment .kyle {
   display: flex;
@@ -532,25 +635,27 @@ body {
 
 #footer {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
   justify-content: space-around;
   align-items: normal;
-  margin-top: 150px;
+  background-color: #0B2447;
+  margin-top: 10%;
+  padding: 2%;
 }
 #footer .products h4 {
-  color: #333;
+  color: white;
   font-size: 17px;
   margin: 30px;
   cursor: pointer;
 }
 #footer .company h4 {
-  color: #333;
+  color: white;
   font-size: 17px;
   margin: 30px;
   cursor: pointer;
 }
 #footer .service h4 {
-  color: #333;
+  color: white;
   font-size: 17px;
   margin: 30px;
   cursor: pointer;
@@ -558,22 +663,24 @@ body {
 #footer .products h4:nth-child(1),
 #footer .company h4:nth-child(1),
 #footer .service h4:nth-child(1) {
-  color: black;
+  color: white;
   font-size: 20px;
   font-family: "Times New Roman", Times, serif;
-  text-decoration: underline #333;
+  text-decoration: underline white;
   text-transform: uppercase;
 }
 #footer .sign-up h4 {
+  color: white;
   font-size: 20px;
-  text-decoration: underline #333;
+  text-decoration: underline white;
   font-family: "Times New Roman", Times, serif;
   text-transform: uppercase;
+  margin-bottom: 0px;
 }
-#footer .sign-up h5 {
-  color: #333;
+#footer .sign-up p {
+  color: white;
   font-size: 17px;
-  margin-top: -15px;
+  margin-bottom: 30px;
 }
 #footer .sign-up a {
   font-size: 20px;
@@ -588,11 +695,435 @@ body {
 }
 
 .copy {
+  color: white;
   width: 100%;
-  padding: 0px;
   display: flex;
   justify-content: center;
-  margin-top: 40px;
+  align-items: flex-end;
+  padding-top: 20px;
+  background-color: #0B2447;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .container .necesidad .caract-product h2 {
+    font-size: 25px;
+  }
+  .container .foto {
+    margin-top: 25px;
+  }
+  .container .pickers {
+    flex-direction: column;
+  }
+  .container .pickers pick-color .colores-box {
+    justify-content: normal;
+  }
+  #section-2 .clothes {
+    width: 100%;
+    flex-direction: column;
+  }
+  #section-2 .clothes .sudadera {
+    padding: 4%;
+    display: flex;
+    justify-content: center;
+  }
+  #section-2 .clothes .sudadera img {
+    width: 100%;
+  }
+  #section-2 .clothes .polo {
+    padding: 4%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  #section-2 .clothes .polo img {
+    width: 100%;
+  }
+  #section-2 .clothes .sobrecamisa {
+    padding: 4%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  #section-2 .clothes .sobrecamisa img {
+    width: 100%;
+  }
+  #section-2 .info {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #section-2 .info .envio {
+    margin-left: 15%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  #section-2 .info .support {
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #section-2 .info .buys {
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #section-2 .info .gift {
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .display-none {
+    display: none;
+  }
+  #comentarios {
+    margin-left: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #comentarios .reviews {
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #comentarios .reviews h3 {
+    font-size: 19px;
+  }
+  #comentarios .reviews .user p {
+    font-size: 18px;
+  }
+  #comentarios .reviews .stats .star-5 p {
+    font-size: 15px;
+  }
+  #comentarios .reviews .stats .star-5 .barra-5 {
+    width: 60px;
+  }
+  #comentarios .reviews .stats .star-4 p {
+    font-size: 15px;
+  }
+  #comentarios .reviews .stats .star-4 .barra-4 {
+    width: 50px;
+  }
+  #comentarios .reviews .stats .star-3 p {
+    font-size: 15px;
+  }
+  #comentarios .reviews .stats .star-3 .barra-3 {
+    width: 35px;
+  }
+  #comentarios .reviews .stats .star-2 p {
+    font-size: 15px;
+  }
+  #comentarios .reviews .stats .star-2 .barra-2 {
+    width: 25px;
+  }
+  #comentarios .reviews .stats .star-1 p {
+    font-size: 15px;
+  }
+  #comentarios .reviews .stats .star-1 .barra-1 {
+    width: 15px;
+  }
+  #comentarios .reviews .share {
+    margin-bottom: 100px;
+  }
+  #comentarios .coment .persona-1 p {
+    margin-bottom: 100px;
+  }
+  #comentarios .coment .persona-2 p {
+    margin-bottom: 100px;
+  }
+  #comentarios .coment .persona-3 p {
+    margin-bottom: 100px;
+  }
+  #footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 900px) {
+  .container {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .container .necesidad .caract-product h2 {
+    font-size: 25px;
+  }
+  .container .foto {
+    margin-top: 25px;
+    width: 80%;
+  }
+  .container .pickers {
+    flex-direction: column;
+  }
+  .container .pickers pick-color .colores-box {
+    justify-content: normal;
+  }
+  #section-2 .clothes {
+    width: 100%;
+    flex-direction: column;
+  }
+  #section-2 .clothes .sudadera {
+    padding: 4%;
+    display: flex;
+    justify-content: center;
+  }
+  #section-2 .clothes .sudadera img {
+    width: 80%;
+  }
+  #section-2 .clothes .polo {
+    padding: 4%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  #section-2 .clothes .polo img {
+    width: 80%;
+  }
+  #section-2 .clothes .sobrecamisa {
+    padding: 4%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  #section-2 .clothes .sobrecamisa img {
+    width: 80%;
+  }
+  #section-2 .info {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #section-2 .info .envio {
+    margin-left: 15%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  #section-2 .info .support {
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #section-2 .info .buys {
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #section-2 .info .gift {
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .display-none {
+    display: none;
+  }
+  #comentarios {
+    margin-left: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #comentarios .reviews {
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #comentarios .reviews h3 {
+    font-size: 19px;
+  }
+  #comentarios .reviews .user p {
+    font-size: 18px;
+  }
+  #comentarios .reviews .stats .star-5 p {
+    font-size: 15px;
+  }
+  #comentarios .reviews .stats .star-5 .barra-5 {
+    width: 60px;
+  }
+  #comentarios .reviews .stats .star-4 p {
+    font-size: 15px;
+  }
+  #comentarios .reviews .stats .star-4 .barra-4 {
+    width: 50px;
+  }
+  #comentarios .reviews .stats .star-3 p {
+    font-size: 15px;
+  }
+  #comentarios .reviews .stats .star-3 .barra-3 {
+    width: 35px;
+  }
+  #comentarios .reviews .stats .star-2 p {
+    font-size: 15px;
+  }
+  #comentarios .reviews .stats .star-2 .barra-2 {
+    width: 25px;
+  }
+  #comentarios .reviews .stats .star-1 p {
+    font-size: 15px;
+  }
+  #comentarios .reviews .stats .star-1 .barra-1 {
+    width: 15px;
+  }
+  #comentarios .reviews .share {
+    margin-bottom: 100px;
+  }
+  #comentarios .coment .persona-1 p {
+    margin-bottom: 100px;
+  }
+  #comentarios .coment .persona-2 p {
+    margin-bottom: 100px;
+  }
+  #comentarios .coment .persona-3 p {
+    margin-bottom: 100px;
+  }
+  #footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container {
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+  .container .necesidad .caract-product h2 {
+    font-size: 25px;
+  }
+  .container .foto {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-top: 25px;
+  }
+  .container .pickers {
+    flex-direction: column;
+  }
+  .container .pickers pick-color .colores-box {
+    justify-content: normal;
+  }
+  #section-2 .clothes {
+    width: 100%;
+    flex-direction: column;
+  }
+  #section-2 .clothes .sudadera {
+    padding: 4%;
+    display: flex;
+    justify-content: center;
+  }
+  #section-2 .clothes .sudadera img {
+    width: 80%;
+    border-radius: 50px;
+  }
+  #section-2 .clothes .polo {
+    padding: 4%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  #section-2 .clothes .polo img {
+    width: 80%;
+    border-radius: 50px;
+  }
+  #section-2 .clothes .sobrecamisa {
+    padding: 4%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+  }
+  #section-2 .clothes .sobrecamisa img {
+    width: 80%;
+    border-radius: 50px;
+  }
+  #section-2 .info {
+    flex-direction: column;
+    justify-content: center;
+  }
+  #section-2 .info .envio {
+    margin-left: 15%;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  #section-2 .info .support {
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #section-2 .info .buys {
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #section-2 .info .gift {
+    margin-left: 15%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #comentarios {
+    margin-left: 0px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  #comentarios .reviews {
+    margin-right: 0px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  #comentarios .reviews h3 {
+    font-size: 19px;
+  }
+  #comentarios .reviews .user p {
+    font-size: 18px;
+  }
+  #comentarios .reviews .stats .star-5 p {
+    font-size: 15px;
+  }
+  #comentarios .reviews .stats .star-5 .barra-5 {
+    width: 60px;
+  }
+  #comentarios .reviews .stats .star-4 p {
+    font-size: 15px;
+  }
+  #comentarios .reviews .stats .star-4 .barra-4 {
+    width: 50px;
+  }
+  #comentarios .reviews .stats .star-3 p {
+    font-size: 15px;
+  }
+  #comentarios .reviews .stats .star-3 .barra-3 {
+    width: 35px;
+  }
+  #comentarios .reviews .stats .star-2 p {
+    font-size: 15px;
+  }
+  #comentarios .reviews .stats .star-2 .barra-2 {
+    width: 25px;
+  }
+  #comentarios .reviews .stats .star-1 p {
+    font-size: 15px;
+  }
+  #comentarios .reviews .stats .star-1 .barra-1 {
+    width: 15px;
+  }
+  #comentarios .reviews .share {
+    margin-bottom: 100px;
+  }
+  #comentarios .coment .persona-1 p {
+    margin-bottom: 100px;
+  }
+  #comentarios .coment .persona-2 p {
+    margin-bottom: 100px;
+  }
+  #comentarios .coment .persona-3 p {
+    margin-bottom: 100px;
+  }
+  #footer {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

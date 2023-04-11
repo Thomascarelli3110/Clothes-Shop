@@ -11,24 +11,28 @@
 
     .fine-details {
         width: 100%;
+        margin-bottom: 100px;
+        margin-top: 100px;
 
         h2 {
             width: 100%;
-            margin-top: 5%;
             text-align: center;
-            font-size: 35px;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            color: #2b2a2a;
+            font-size: 40px;
+            font-family: didot;
+            color: black;
+            font-weight: bolder;
+            text-transform: uppercase;
         }
 
-        p {
-            @include flexible(flex, row, wrap, center, center);
-            width: 60%;
-            margin-left: 450px;
-            margin-bottom: 90px;
-            font-size: 18px;
-            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        .parrafo-1,
+        .parrafo-2,
+        .parrafo-3 {
+            width: 100%;
+            text-align: center;
+            margin-top: -10px;
+            color: #333;
         }
+
     }
 
     .clothes {
@@ -36,37 +40,38 @@
 
         .sudadera {
             img {
-                width: 450px;
-                border-radius: 25px;
-                box-shadow: 0px 0px 4px rgb(90, 123, 170);
+               width: 450px;
+               padding: 2%;
+                border-radius: 30px;
             }
         }
 
         .sobrecamisa {
             img {
                 width: 450px;
-                border-radius: 25px;
-                box-shadow: 0px 0px 4px rgb(90, 123, 170);
+                padding: 2%;
+                border-radius: 30px;
             }
         }
 
         .polo {
             img {
-                width: 450px;
-                border-radius: 25px;
-                box-shadow: 0px 0px 4px rgb(90, 123, 170);
+               width: 450px;
+               padding: 2%;
+                border-radius: 30px;
             }
         }
     }
 
     .info {
-        @include flexible(flex, row, nowrap, space-around, noraml);
+        width: 90%;
+        @include flexible(flex, row, nowrap, space-between, normal);
         margin: 6%;
         margin-top: 7%;
 
         .envio {
             img {
-                width: 50px;
+                width: 15%;
                 border: 1px solid white;
                 border-radius: 150px;
                 padding: 30px;
@@ -76,15 +81,18 @@
             }
 
             p {
-                width: 350px;
-                font-family: 'Times New Roman', Times, serif;
+                width: 90%;
+                font-family: "Times New Roman", Times, serif;
                 font-size: 18px;
+                margin: 0px;
+                margin-top: 8px;
+                color: #333;
             }
         }
 
         .support {
             img {
-                width: 50px;
+                width: 15%;
                 border: 1px solid white;
                 border-radius: 150px;
                 padding: 30px;
@@ -94,15 +102,18 @@
             }
 
             p {
-                width: 350px;
-                font-family: 'Times New Roman', Times, serif;
+                width: 90%;
+                font-family: "Times New Roman", Times, serif;
                 font-size: 18px;
+                margin: 0px;
+                margin-top: 8px;
+                color: #333;
             }
         }
 
         .buys {
             img {
-                width: 50px;
+                width: 15%;
                 border: 1px solid white;
                 border-radius: 150px;
                 padding: 30px;
@@ -112,15 +123,18 @@
             }
 
             p {
-                width: 350px;
-                font-family: 'Times New Roman', Times, serif;
+                width: 90%;
+                font-family: "Times New Roman", Times, serif;
                 font-size: 18px;
+                margin: 0px;
+                margin-top: 8px;
+                color: #333;
             }
         }
 
         .gift {
             img {
-                width: 50px;
+                width: 15%;
                 border: 1px solid white;
                 border-radius: 150px;
                 padding: 30px;
@@ -130,9 +144,12 @@
             }
 
             p {
-                width: 350px;
-                font-family: 'Times New Roman', Times, serif;
+                width: 90%;
+                font-family: "Times New Roman", Times, serif;
                 font-size: 18px;
+                margin: 0px;
+                margin-top: 8px;
+                color: #333;
             }
         }
     }

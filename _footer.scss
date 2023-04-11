@@ -6,25 +6,28 @@
 }
 
 #footer {
-    @include flexible(flex, row, nowrap, space-around, normal);
-    margin-top: 150px;
+      @include flexible(flex,row,wrap,space-around,normal);
+      background-color:#0B2447;
+      margin-top: 10%;
+      padding: 2%;
+
 
     .products h4 {
-        color: #333;
+        color: white;
         font-size: 17px;
         margin: 30px;
         cursor: pointer;
     }
 
     .company h4 {
-        color: #333;
+        color: white;
         font-size: 17px;
         margin: 30px;
         cursor: pointer;
     }
 
     .service h4 {
-        color: #333;
+        color: white;
         font-size: 17px;
         margin: 30px;
         cursor: pointer;
@@ -33,25 +36,27 @@
     .products h4:nth-child(1),
     .company h4:nth-child(1),
     .service h4:nth-child(1) {
-        color: black;
+        color: white;
         font-size: 20px;
         font-family: 'Times New Roman', Times, serif;
-        text-decoration: underline #333;
+        text-decoration: underline white;
         text-transform: uppercase;
     }
 
     .sign-up {
         h4 {
+            color: white;
             font-size: 20px;
-            text-decoration: underline #333;
+            text-decoration: underline white;
             font-family: 'Times New Roman', Times, serif;
             text-transform: uppercase;
+            margin-bottom: 0px;
         }
 
-        h5 {
-            color: #333;
+        p {
+            color: white;
             font-size: 17px;
-            margin-top: -15px;
+            margin-bottom: 30px;
         }
 
         a {
@@ -67,11 +72,12 @@
         }
     }
 }
-
 .copy {
+    color: white;
     width: 100%;
-    padding: 0px;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
+    align-items: flex-end;
+    padding-top: 20px;
+    background-color: #0B2447;
 }

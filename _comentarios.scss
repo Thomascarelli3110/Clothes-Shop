@@ -6,11 +6,17 @@
     }
 
     .share {
-        width: 70%;
+        width: 100%;
         h3 {
             color: black;
-            width: 80%;
-            font-family: Arial, Helvetica, sans-serif;
+            font-size: 17px;
+            font-family: 'Times New Roman', Times, serif;
+            font-weight: bold;
+        }
+
+        p{
+            color: #333;
+            margin-bottom: 40px;
         }
 
         h4 a {
@@ -21,39 +27,55 @@
             box-shadow: 0px 0px 2px black inset;
             padding: 10px;
             border-radius: 20px;
-            font-size: 17px;
-            font-family: 'Times New Roman', Times, serif;
+            font-size: 18px;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
         }
     }
 
     .coment {
         @include flexible(flex, column, nowrap, space-between, normal);
-        margin-left: 20px;
+        margin-left: 70px;
 
         .person-1 {
+
+            h4{
+                font-size: 20px;
+                margin-top: 10px;
+            }
             p {
-                width: 70%;
+                width: 85%;
                 margin-top: 0;
-                font-size: 15px;
+                font-size: 17px;
                 font-family:Georgia, 'Times New Roman', Times, serif;
+                color: #333;
             }
         }
 
         .person-2 {
+            h4{
+                font-size: 20px;
+                margin-top: 10px;
+            }
             p {
-                width: 70%;
+                width: 85%;
                 margin-top: 0;
-                font-size: 15px;
+                font-size: 17px;
                 font-family:Georgia, 'Times New Roman', Times, serif;
+                color: #333;
             }
         }
 
         .person-3 {
+            h4{
+                font-size: 20px;
+                margin-top: 10px;
+            }
             p {
-                width: 70%;
+                width: 85%;
                 margin-top: 0;
-                font-size: 15px;
+                font-size: 17px;
                 font-family:Georgia, 'Times New Roman', Times, serif;
+                color: #333;
             }
         }
 

@@ -1,0 +1,658 @@
+@mixin flexible($dis, $direction, $corte, $just, $align) {
+    display: $dis;
+    flex-flow: $direction $corte;
+    justify-content: $just;
+    align-items: $align;
+}
+
+//Media querie de 600px
+
+@media screen and (max-width:600px) {
+    .container {
+        align-items: center;
+        flex-direction: column-reverse;
+
+        .necesidad {
+            .caract-product {
+                h2 {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .foto {
+            margin-top: 25px;
+        }
+
+        .pickers {
+            flex-direction: column;
+
+            pick-color {
+                .colores-box {
+                    justify-content: normal;
+                }
+            }
+        }
+    }
+
+    #section-2 {
+
+        .clothes {
+            width: 100%;
+            flex-direction: column;
+
+            .sudadera {
+                img {
+                    width: 100%;
+                }
+
+                padding: 4%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .polo {
+                img {
+                    width: 100%;
+                }
+
+                padding: 4%;
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .sobrecamisa {
+                img {
+                    width: 100%;
+                }
+
+                padding: 4%;
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .info {
+            flex-direction: column;
+            justify-content: center;
+
+            .envio {
+                margin-left: 15%;
+                margin-top: 100px;
+                margin-bottom: 50px;
+            }
+
+            .support {
+                margin-left: 15%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            .buys {
+                margin-left: 15%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            .gift {
+                margin-left: 15%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    #comentarios {
+        margin-left: 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .reviews {
+            margin-right: 0px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            h3 {
+                font-size: 19px;
+            }
+
+            .user p {
+                font-size: 18px;
+            }
+
+            .stats {
+                .star-5 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-5 {
+                        width: 60px;
+                    }
+
+                }
+
+                .star-4 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-4 {
+                        width: 50px;
+                    }
+                }
+
+                .star-3 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-3 {
+                        width: 35px;
+                    }
+                }
+
+                .star-2 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-2 {
+                        width: 25px;
+                    }
+                }
+
+                .star-1 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-1 {
+                        width: 15px;
+                    }
+                }
+            }
+
+            .share {
+                margin-bottom: 100px;
+            }
+        }
+
+        .coment {
+            .persona-1 {
+                p {
+                    margin-bottom: 100px;
+                }
+
+            }
+
+            .persona-2 {
+                p {
+                    margin-bottom: 100px;
+                }
+
+            }
+
+            .persona-3 {
+                p {
+                    margin-bottom: 100px;
+                }
+
+            }
+        }
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+//Media querie de 900px
+
+@media screen and (max-width:900px) {
+    .container {
+        align-items: center;
+        flex-direction: column-reverse;
+
+        .necesidad {
+            .caract-product {
+                h2 {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .foto {
+            margin-top: 25px;
+            width: 80%;
+        }
+
+        .pickers {
+            flex-direction: column;
+
+            pick-color {
+                .colores-box {
+                    justify-content: normal;
+                }
+            }
+        }
+    }
+
+    #section-2 {
+
+        .clothes {
+            width: 100%;
+            flex-direction: column;
+
+            .sudadera {
+                img {
+                    width: 80%;
+                }
+
+                padding: 4%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .polo {
+                img {
+                    width: 80%;
+                }
+
+                padding: 4%;
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .sobrecamisa {
+                img {
+                    width: 80%;
+                }
+
+                padding: 4%;
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .info {
+            flex-direction: column;
+            justify-content: center;
+
+            .envio {
+                margin-left: 15%;
+                margin-top: 100px;
+                margin-bottom: 50px;
+            }
+
+            .support {
+                margin-left: 15%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            .buys {
+                margin-left: 15%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            .gift {
+                margin-left: 15%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    #comentarios {
+        margin-left: 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .reviews {
+            margin-right: 0px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            h3 {
+                font-size: 19px;
+            }
+
+            .user p {
+                font-size: 18px;
+            }
+
+            .stats {
+                .star-5 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-5 {
+                        width: 60px;
+                    }
+
+                }
+
+                .star-4 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-4 {
+                        width: 50px;
+                    }
+                }
+
+                .star-3 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-3 {
+                        width: 35px;
+                    }
+                }
+
+                .star-2 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-2 {
+                        width: 25px;
+                    }
+                }
+
+                .star-1 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-1 {
+                        width: 15px;
+                    }
+                }
+            }
+
+            .share {
+                margin-bottom: 100px;
+            }
+        }
+
+        .coment {
+            .persona-1 {
+                p {
+                    margin-bottom: 100px;
+                }
+
+            }
+
+            .persona-2 {
+                p {
+                    margin-bottom: 100px;
+                }
+
+            }
+
+            .persona-3 {
+                p {
+                    margin-bottom: 100px;
+                }
+
+            }
+        }
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+//Media querie de 1200px
+
+@media screen and (max-width:1200px) {
+    .container {
+        align-items: center;
+        flex-direction: column-reverse;
+
+        .necesidad {
+            .caract-product {
+                h2 {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .foto {
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            margin-top: 25px;
+        }
+
+        .pickers {
+            flex-direction: column;
+
+            pick-color {
+                .colores-box {
+                    justify-content: normal;
+                }
+            }
+        }
+    }
+
+    #section-2 {
+
+        .clothes {
+            width: 100%;
+            flex-direction: column;
+
+            .sudadera {
+                img {
+                    width: 80%;
+                    border-radius: 50px;
+                }
+
+                padding: 4%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .polo {
+                img {
+                    width: 80%;
+                    border-radius: 50px;
+                }
+
+                padding: 4%;
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .sobrecamisa {
+                img {
+                    width: 80%;
+                    border-radius: 50px;
+                }
+
+                padding: 4%;
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .info {
+            flex-direction: column;
+            justify-content: center;
+
+            .envio {
+                margin-left: 15%;
+                margin-top: 100px;
+                margin-bottom: 50px;
+            }
+
+            .support {
+                margin-left: 15%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            .buys {
+                margin-left: 15%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            .gift {
+                margin-left: 15%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+
+    #comentarios {
+        margin-left: 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .reviews {
+            margin-right: 0px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            h3 {
+                font-size: 19px;
+            }
+
+            .user p {
+                font-size: 18px;
+            }
+
+            .stats {
+                .star-5 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-5 {
+                        width: 60px;
+                    }
+
+                }
+
+                .star-4 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-4 {
+                        width: 50px;
+                    }
+                }
+
+                .star-3 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-3 {
+                        width: 35px;
+                    }
+                }
+
+                .star-2 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-2 {
+                        width: 25px;
+                    }
+                }
+
+                .star-1 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-1 {
+                        width: 15px;
+                    }
+                }
+            }
+
+            .share {
+                margin-bottom: 100px;
+            }
+        }
+
+        .coment {
+            .persona-1 {
+                p {
+                    margin-bottom: 100px;
+                }
+
+            }
+
+            .persona-2 {
+                p {
+                    margin-bottom: 100px;
+                }
+
+            }
+
+            .persona-3 {
+                p {
+                    margin-bottom: 100px;
+                }
+
+            }
+        }
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
