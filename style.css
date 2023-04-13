@@ -369,6 +369,9 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   margin-bottom: 25px;
 }
+#comentarios .reviews .stats {
+  width: 100%;
+}
 #comentarios .reviews .stats .star-5 {
   display: flex;
   flex-flow: row nowrap;
@@ -382,11 +385,11 @@ body {
 #comentarios .reviews .stats .star-5 a {
   text-decoration: none;
   color: gold;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 1%;
 }
 #comentarios .reviews .stats .star-5 .barra-5 {
-  width: 90px;
+  width: 50%;
   height: 13px;
   margin-left: 10px;
   background-color: gold;
@@ -407,11 +410,11 @@ body {
 #comentarios .reviews .stats .star-4 a {
   text-decoration: none;
   color: gold;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 1%;
 }
 #comentarios .reviews .stats .star-4 .barra-4 {
-  width: 75px;
+  width: 35%;
   height: 13px;
   margin-left: 10px;
   background-color: gold;
@@ -432,11 +435,11 @@ body {
 #comentarios .reviews .stats .star-3 a {
   text-decoration: none;
   color: gold;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 1%;
 }
 #comentarios .reviews .stats .star-3 .barra-3 {
-  width: 55px;
+  width: 20%;
   height: 13px;
   margin-left: 10px;
   background-color: gold;
@@ -457,11 +460,11 @@ body {
 #comentarios .reviews .stats .star-2 a {
   text-decoration: none;
   color: gold;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 1%;
 }
 #comentarios .reviews .stats .star-2 .barra-2 {
-  width: 40px;
+  width: 10%;
   height: 13px;
   margin-left: 10px;
   background-color: gold;
@@ -482,11 +485,11 @@ body {
 #comentarios .reviews .stats .star-1 a {
   text-decoration: none;
   color: gold;
-  font-size: 14px;
+  font-size: 18px;
   margin-bottom: 1%;
 }
 #comentarios .reviews .stats .star-1 .barra-1 {
-  width: 30px;
+  width: 6%;
   height: 13px;
   margin-left: 10px;
   background-color: gold;
@@ -705,303 +708,187 @@ body {
 }
 
 @media screen and (max-width: 600px) {
-  .container {
+  body .container {
     align-items: center;
     flex-direction: column-reverse;
   }
-  .container .necesidad .caract-product h2 {
+  body .container .necesidad .caract-product {
+    margin-top: -100px;
+  }
+  body .container .necesidad .caract-product h2 {
     font-size: 25px;
   }
-  .container .foto {
+  body .container .foto {
     margin-top: 25px;
   }
-  .container .pickers {
+  body .container .pickers {
     flex-direction: column;
   }
-  .container .pickers pick-color .colores-box {
+  body .container .pickers pick-color .colores-box {
     justify-content: normal;
   }
-  #section-2 .clothes {
+  body #section-2 .fine-details h2 {
+    font-size: 27px;
+  }
+  body #section-2 .fine-details .parrafo-1,
+  body #section-2 .fine-details .parrafo-2,
+  body #section-2 .fine-details .parrafo-3 {
+    font-size: 14px;
+  }
+  body #section-2 .clothes {
     width: 100%;
     flex-direction: column;
   }
-  #section-2 .clothes .sudadera {
+  body #section-2 .clothes .sudadera {
     padding: 4%;
     display: flex;
     justify-content: center;
   }
-  #section-2 .clothes .sudadera img {
-    width: 100%;
+  body #section-2 .clothes .sudadera img {
+    width: 80%;
   }
-  #section-2 .clothes .polo {
+  body #section-2 .clothes .polo {
     padding: 4%;
     margin-top: 50px;
     display: flex;
     justify-content: center;
   }
-  #section-2 .clothes .polo img {
-    width: 100%;
+  body #section-2 .clothes .polo img {
+    width: 80%;
   }
-  #section-2 .clothes .sobrecamisa {
+  body #section-2 .clothes .sobrecamisa {
     padding: 4%;
     margin-top: 50px;
     display: flex;
     justify-content: center;
   }
-  #section-2 .clothes .sobrecamisa img {
-    width: 100%;
+  body #section-2 .clothes .sobrecamisa img {
+    width: 80%;
   }
-  #section-2 .info {
+  body #section-2 .info {
     flex-direction: column;
     justify-content: center;
   }
-  #section-2 .info .envio {
+  body #section-2 .info .envio {
     margin-left: 15%;
     margin-top: 100px;
     margin-bottom: 50px;
   }
-  #section-2 .info .support {
+  body #section-2 .info .support {
     margin-left: 15%;
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  #section-2 .info .buys {
+  body #section-2 .info .buys {
     margin-left: 15%;
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  #section-2 .info .gift {
+  body #section-2 .info .gift {
     margin-left: 15%;
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  .display-none {
+  body .display-none {
     display: none;
   }
-  #comentarios {
+  body #comentarios {
     margin-left: 0px;
     flex-wrap: wrap;
     justify-content: center;
   }
-  #comentarios .reviews {
+  body #comentarios .reviews {
     margin-right: 0px;
     display: flex;
     flex-direction: column;
     margin-top: 50px;
     margin-bottom: 50px;
   }
-  #comentarios .reviews h3 {
+  body #comentarios .reviews h3 {
     font-size: 19px;
   }
-  #comentarios .reviews .user p {
+  body #comentarios .reviews .user p {
     font-size: 18px;
   }
-  #comentarios .reviews .stats .star-5 p {
+  body #comentarios .reviews .stats {
+    width: 125%;
+  }
+  body #comentarios .reviews .stats .star-5 p {
     font-size: 15px;
   }
-  #comentarios .reviews .stats .star-5 .barra-5 {
-    width: 60px;
+  body #comentarios .reviews .stats .star-5 .barra-5 {
+    width: 43%;
   }
-  #comentarios .reviews .stats .star-4 p {
+  body #comentarios .reviews .stats .star-4 p {
     font-size: 15px;
   }
-  #comentarios .reviews .stats .star-4 .barra-4 {
-    width: 50px;
+  body #comentarios .reviews .stats .star-4 .barra-4 {
+    width: 33%;
   }
-  #comentarios .reviews .stats .star-3 p {
+  body #comentarios .reviews .stats .star-3 p {
     font-size: 15px;
   }
-  #comentarios .reviews .stats .star-3 .barra-3 {
-    width: 35px;
+  body #comentarios .reviews .stats .star-3 .barra-3 {
+    width: 25%;
   }
-  #comentarios .reviews .stats .star-2 p {
+  body #comentarios .reviews .stats .star-2 p {
     font-size: 15px;
   }
-  #comentarios .reviews .stats .star-2 .barra-2 {
-    width: 25px;
+  body #comentarios .reviews .stats .star-2 .barra-2 {
+    width: 17%;
   }
-  #comentarios .reviews .stats .star-1 p {
+  body #comentarios .reviews .stats .star-1 p {
     font-size: 15px;
   }
-  #comentarios .reviews .stats .star-1 .barra-1 {
-    width: 15px;
+  body #comentarios .reviews .stats .star-1 .barra-1 {
+    width: 10%;
   }
-  #comentarios .reviews .share {
+  body #comentarios .reviews .stats .share {
     margin-bottom: 100px;
   }
-  #comentarios .coment .persona-1 p {
+  body #comentarios .coment .persona-1 p {
     margin-bottom: 100px;
   }
-  #comentarios .coment .persona-2 p {
+  body #comentarios .coment .persona-2 p {
     margin-bottom: 100px;
   }
-  #comentarios .coment .persona-3 p {
+  body #comentarios .coment .persona-3 p {
     margin-bottom: 100px;
   }
-  #footer {
+  body #footer {
     flex-direction: column;
     align-items: flex-start;
   }
 }
-@media screen and (max-width: 900px) {
-  .container {
-    align-items: center;
-    flex-direction: column-reverse;
-  }
-  .container .necesidad .caract-product h2 {
-    font-size: 25px;
-  }
-  .container .foto {
-    margin-top: 25px;
-    width: 80%;
-  }
-  .container .pickers {
-    flex-direction: column;
-  }
-  .container .pickers pick-color .colores-box {
-    justify-content: normal;
-  }
-  #section-2 .clothes {
-    width: 100%;
-    flex-direction: column;
-  }
-  #section-2 .clothes .sudadera {
-    padding: 4%;
-    display: flex;
-    justify-content: center;
-  }
-  #section-2 .clothes .sudadera img {
-    width: 80%;
-  }
-  #section-2 .clothes .polo {
-    padding: 4%;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-  }
-  #section-2 .clothes .polo img {
-    width: 80%;
-  }
-  #section-2 .clothes .sobrecamisa {
-    padding: 4%;
-    margin-top: 50px;
-    display: flex;
-    justify-content: center;
-  }
-  #section-2 .clothes .sobrecamisa img {
-    width: 80%;
-  }
-  #section-2 .info {
-    flex-direction: column;
-    justify-content: center;
-  }
-  #section-2 .info .envio {
-    margin-left: 15%;
-    margin-top: 100px;
-    margin-bottom: 50px;
-  }
-  #section-2 .info .support {
-    margin-left: 15%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  #section-2 .info .buys {
-    margin-left: 15%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  #section-2 .info .gift {
-    margin-left: 15%;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  .display-none {
-    display: none;
-  }
-  #comentarios {
-    margin-left: 0px;
-    flex-wrap: wrap;
-    justify-content: center;
-  }
-  #comentarios .reviews {
-    margin-right: 0px;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  #comentarios .reviews h3 {
-    font-size: 19px;
-  }
-  #comentarios .reviews .user p {
-    font-size: 18px;
-  }
-  #comentarios .reviews .stats .star-5 p {
-    font-size: 15px;
-  }
-  #comentarios .reviews .stats .star-5 .barra-5 {
-    width: 60px;
-  }
-  #comentarios .reviews .stats .star-4 p {
-    font-size: 15px;
-  }
-  #comentarios .reviews .stats .star-4 .barra-4 {
-    width: 50px;
-  }
-  #comentarios .reviews .stats .star-3 p {
-    font-size: 15px;
-  }
-  #comentarios .reviews .stats .star-3 .barra-3 {
-    width: 35px;
-  }
-  #comentarios .reviews .stats .star-2 p {
-    font-size: 15px;
-  }
-  #comentarios .reviews .stats .star-2 .barra-2 {
-    width: 25px;
-  }
-  #comentarios .reviews .stats .star-1 p {
-    font-size: 15px;
-  }
-  #comentarios .reviews .stats .star-1 .barra-1 {
-    width: 15px;
-  }
-  #comentarios .reviews .share {
-    margin-bottom: 100px;
-  }
-  #comentarios .coment .persona-1 p {
-    margin-bottom: 100px;
-  }
-  #comentarios .coment .persona-2 p {
-    margin-bottom: 100px;
-  }
-  #comentarios .coment .persona-3 p {
-    margin-bottom: 100px;
-  }
-  #footer {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
+
 @media screen and (max-width: 1200px) {
   .container {
     align-items: center;
     flex-direction: column-reverse;
   }
+  .container .necesidad .caract-product {
+    margin-top: -100px;
+  }
   .container .necesidad .caract-product h2 {
     font-size: 25px;
   }
   .container .foto {
-    display: flex;
-    justify-content: center;
-    width: 90%;
     margin-top: 25px;
+    width: 80%;
   }
   .container .pickers {
     flex-direction: column;
   }
   .container .pickers pick-color .colores-box {
     justify-content: normal;
+  }
+  #section-2 .fine-details h2 {
+    font-size: 35px;
+  }
+  #section-2 .fine-details .parrafo-1,
+  #section-2 .fine-details .parrafo-2,
+  #section-2 .fine-details .parrafo-3 {
+    font-size: 16px;
   }
   #section-2 .clothes {
     width: 100%;
@@ -1014,7 +901,6 @@ body {
   }
   #section-2 .clothes .sudadera img {
     width: 80%;
-    border-radius: 50px;
   }
   #section-2 .clothes .polo {
     padding: 4%;
@@ -1024,7 +910,6 @@ body {
   }
   #section-2 .clothes .polo img {
     width: 80%;
-    border-radius: 50px;
   }
   #section-2 .clothes .sobrecamisa {
     padding: 4%;
@@ -1034,7 +919,6 @@ body {
   }
   #section-2 .clothes .sobrecamisa img {
     width: 80%;
-    border-radius: 50px;
   }
   #section-2 .info {
     flex-direction: column;
@@ -1060,6 +944,9 @@ body {
     margin-top: 50px;
     margin-bottom: 50px;
   }
+  .display-none {
+    display: none;
+  }
   #comentarios {
     margin-left: 0px;
     flex-wrap: wrap;
@@ -1082,31 +969,31 @@ body {
     font-size: 15px;
   }
   #comentarios .reviews .stats .star-5 .barra-5 {
-    width: 60px;
+    width: 49%;
   }
   #comentarios .reviews .stats .star-4 p {
     font-size: 15px;
   }
   #comentarios .reviews .stats .star-4 .barra-4 {
-    width: 50px;
+    width: 33%;
   }
   #comentarios .reviews .stats .star-3 p {
     font-size: 15px;
   }
   #comentarios .reviews .stats .star-3 .barra-3 {
-    width: 35px;
+    width: 20%;
   }
   #comentarios .reviews .stats .star-2 p {
     font-size: 15px;
   }
   #comentarios .reviews .stats .star-2 .barra-2 {
-    width: 25px;
+    width: 14%;
   }
   #comentarios .reviews .stats .star-1 p {
     font-size: 15px;
   }
   #comentarios .reviews .stats .star-1 .barra-1 {
-    width: 15px;
+    width: 7%;
   }
   #comentarios .reviews .share {
     margin-bottom: 100px;

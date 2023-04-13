@@ -1,0 +1,228 @@
+@media screen and (max-width:1200px) {
+    .container {
+        align-items: center;
+        flex-direction: column-reverse;
+
+        .necesidad {
+            .caract-product {
+                margin-top: -100px;
+                h2 {
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .foto {
+            margin-top: 25px;
+            width: 80%;
+        }
+
+        .pickers {
+            flex-direction: column;
+
+            pick-color {
+                .colores-box {
+                    justify-content: normal;
+                }
+            }
+        }
+    }
+
+    #section-2 {
+
+        .fine-details {
+            h2 {
+                font-size: 35px;
+            }
+
+            .parrafo-1,
+            .parrafo-2,
+            .parrafo-3 {
+                font-size: 16px;
+            }
+
+        }
+
+        .clothes {
+            width: 100%;
+            flex-direction: column;
+
+            .sudadera {
+                img {
+                    width: 80%;
+                }
+
+                padding: 4%;
+                display: flex;
+                justify-content: center;
+            }
+
+            .polo {
+                img {
+                    width: 80%;
+                }
+
+                padding: 4%;
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+            }
+
+            .sobrecamisa {
+                img {
+                    width: 80%;
+                }
+
+                padding: 4%;
+                margin-top: 50px;
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+        .info {
+            flex-direction: column;
+            justify-content: center;
+
+            .envio {
+                margin-left: 15%;
+                margin-top: 100px;
+                margin-bottom: 50px;
+            }
+
+            .support {
+                margin-left: 15%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            .buys {
+                margin-left: 15%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+
+            .gift {
+                margin-left: 15%;
+                margin-top: 50px;
+                margin-bottom: 50px;
+            }
+        }
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    #comentarios {
+        margin-left: 0px;
+        flex-wrap: wrap;
+        justify-content: center;
+
+        .reviews {
+            margin-right: 0px;
+            display: flex;
+            flex-direction: column;
+            margin-top: 50px;
+            margin-bottom: 50px;
+
+            h3 {
+                font-size: 19px;
+            }
+
+            .user p {
+                font-size: 18px;
+            }
+
+            .stats {
+                .star-5 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-5 {
+                        width: 49%;
+                    }
+
+                }
+
+                .star-4 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-4 {
+                        width: 33%;
+                    }
+                }
+
+                .star-3 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-3 {
+                        width: 20%;
+                    }
+                }
+
+                .star-2 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-2 {
+                        width: 14%;
+                    }
+                }
+
+                .star-1 {
+
+                    p {
+                        font-size: 15px;
+                    }
+
+                    .barra-1 {
+                        width: 7%;
+                    }
+                }
+            }
+
+            .share {
+                margin-bottom: 100px;
+            }
+        }
+
+        .coment {
+            .persona-1 {
+                p {
+                    margin-bottom: 100px;
+                }
+
+            }
+
+            .persona-2 {
+                p {
+                    margin-bottom: 100px;
+                }
+
+            }
+
+            .persona-3 {
+                p {
+                    margin-bottom: 100px;
+                }
+
+            }
+        }
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
