@@ -23,9 +23,8 @@
         }
 
         .stars {
-            @include flexible(flex, row, nowrap, fle-star, normal);
+            @include flexible(flex, row, nowrap, flex-star, normal);
             color: gold;
-            margin-bottom: 40px;
             margin-top: -20px;
 
             .star {
@@ -47,6 +46,11 @@
             }
         }
 
+        > p{
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
+            margin-bottom: 50px;
+        }
+        
         .user p {
             font-size: 16px;
             font-weight: bold;

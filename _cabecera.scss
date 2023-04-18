@@ -5,62 +5,104 @@
     align-items: $align;
 }
 
-#menu {
+.navbar {
+    background-color: rgb(245, 226, 191);
+    height: 48px;
+    padding: 10px 12px;
+    position: relative;
+}
 
-    @include flexible(flex, row, nowrap, space-around, normal);
+.checkbox,
+.icons-1,
+.icons-2 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    cursor: pointer;
+}
 
-    .icono img {
-        width: 50px;
-        margin-top: 8px;
+.icons-1,
+.icons-2 {
+    pointer-events: none;
+    width: 30px;
+}
+
+.checkbox {
+    opacity: 0;
+}
+
+.icons-2 {
+    display: none;
+}
+
+.checkbox:checked ~ .icons-1 {
+    display: none;
+}
+
+.checkbox:checked ~ .icons-2 {
+    display: block;
+}
+
+.menu {
+    width: 200px;
+    position: absolute;
+    top: -96px;
+    z-index: -1;
+    right: 0px;
+    transition: 250ms;
+
+}
+
+.menu li {
+    list-style: none;
+    border-radius: 0px 0px 15px 15px;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+        display: block;
+        padding: 9px 12px;
+        background-color: rgb(252, 218, 156);
     }
 
-    .login {
+    a:hover {
+        background-color: rgb(245, 226, 191);
+    }
+}
+
+.checkbox:checked ~ .menu {
+    top: 48px;
+}
+
+@media screen and (min-width:600px) {
+
+    .checkbox,
+    .icons-1,
+    .icons-2 {
+        display: none;
+    }
+    .navbar{
         display: flex;
-        flex-direction: row-reverse;
-        cursor: pointer;
-
-        a {
-            margin-left: 15px;
-            text-decoration: none;
-            color: black;
-            font-weight: bolder;
-            margin-top: 15px;
-            font-family: none;
-        }
-
-        img {
-            width: 30px;
-            height: 30px;
-            margin-top: 10px;
-        }
     }
 
-    .lista {
-        ul {
-            @include flexible (flex, row, nowrap, center, center);
+    
+    .menu {
+        top: 0;
+        z-index: 1;
+        width: 60%;
+        display: flex;
+        height: 40px;
+    }
+    .menu li a {
+    background-color: rgb(245, 226, 191);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    }
 
-            li {
-                list-style: none;
-
-                a {
-                    text-decoration: none;
-                    padding: 10px;
-                    font-weight: bold;
-                    font-size: 18px;
-                    color: black;
-                }
-
-                a:hover {
-                    border: 1px solid white;
-                    padding: 10px;
-                    background-color: rgb(69, 90, 119);
-                    border-radius: 17px;
-                    transition: all 50ms;
-                    transform: scale(2);
-                    color: white;
-                }
-            }
-        }
-
+    .menu li a:hover{
+        background-color:rgb(252, 218, 156) ;
+        border-radius: 15px;
     }
 }

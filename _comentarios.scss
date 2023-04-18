@@ -20,6 +20,8 @@
         }
 
         h4 a {
+            display: flex;
+            justify-content: center;
             text-decoration: none;
             border: 1px solid #505050;
             background-color: rgb(23, 175, 137);
